@@ -1,0 +1,139 @@
+.Titulo_principal{
+    display: flex;
+    justify-content: center;
+     color: darkgreen;
+     font-size: 30px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    
+}
+.color_Medio{
+    display: flex;
+    justify-content: center;
+    background-color: darkgreen;
+    padding: 2rem;
+   
+   width: 100%;
+    height: 2rem;
+    
+}
+.Pestañas a{
+    padding: 1px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    list-style: none;
+     font-size: 25px;
+   align-items: center;
+    color: black;
+
+}
+body{
+    background-color: black;
+    background-position:top center;
+    Background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+.imagenes1{
+    border: 3px solid darkgreen;
+    display: flex;
+    justify-content:center;
+}
+
+.grid3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    padding: 2rem;
+
+}
+.imagenes2{
+
+justify-content: flex-start;
+order: 1;
+
+}
+
+.parrafo_inicio{
+justify-content: center;
+order: 2; 
+
+}
+.imagenes3{
+  justify-content: flex-end;
+  order: 3;
+}
+.parrafo_inicio{
+    color: azure;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    border: 3px solid whitesmoke;
+    
+}
+
+.Footer{
+    color: darkgreen;
+    background-color: black;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.formulario{
+    background-color: black;
+    margin-top: 20%;
+    color: white;
+    border: 1px solid goldenrod;
+}
+.img_nosotros{
+    float: right;
+    border: 1px solid gold;
+    padding-left: 2rem;
+}
+.video_nosotros{
+    float: left;
+    padding-right: 2rem;
+}
+.p_nosotros{
+    color: wheat;
+}
+.form{
+    text-align: center;
+    border: 1px solid black;
+}
+.form2{
+    border: 1px solid white;
+}
+.contacto{
+    text-align: center;
+    color: white;
+    border: 1px  aliceblue solid;
+    padding-top: 2rem;
+}
+
+/* Diseño Mobile */
+@media screen and (max-width:480px) {
+    .grid3 {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-areas:
+        "imagenes2 imagenes2"
+        "parrafo_inicio parrafo_inicio"
+        "imagenes3 imagene3"
+       
+        "Footer Footer";
+    }
+}
+
+/* Diseño Desktop */
+@media screen and (min-width:481px) {
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "imagenes2 imagenes2 parrafo_inicio parrafo_inicio imagenes3 imagenes3"
+        "footer footer footer footer footer footer";
+    }
+}
